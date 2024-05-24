@@ -11,7 +11,6 @@ const getRand = async () => {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const data = await response.json();
-  console.log(data);
   callDict(data);
 };
 
@@ -27,13 +26,16 @@ const callDict = async (word) => {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const data = await response.json();
-  const definition = data[0].meanings[0].definitions[0].definition;
-  showDef(definition);
+  updateHtml(data);
 };
 
 // Update the html
-const showDef = (definition) => {
-  document.getElementById("definition").innerHTML = definition;
+const updateHtml = (data) => {
+  console.log(data);
+  document.getElementById("word").innerHTML = data[0].word;
+  document.getElementById("pos").innerHTML = data[0].meanings[0].partOfSpeech;
+  document.getElementById("definition").innerHTML =
+    data[0].meanings[0].definitions[0].definition;
 };
 
 getRand();

@@ -1,0 +1,71 @@
+.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Times New Roman", serif;
+  font-size: 12px;
+}
+
+body {
+  max-width: 15vw;
+  display: flex;
+}
+
+#card {
+  background: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  
+}
+
+#container_copy {
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+#pos, #phoentics {
+  font-family: serif;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-size: 1.33rem;
+}
+
+#word {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+#definition {
+  font-family: sans-serif;
+  margin: 0 0 0 0;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: #333;
+}
